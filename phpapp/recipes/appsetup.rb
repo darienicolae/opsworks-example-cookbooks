@@ -1,5 +1,6 @@
 node[:deploy].each do |app_name, deploy|
 
+test
 
   template "#{deploy[:deploy_to]}/current/db-connect.php" do
     source "db-connect.php.erb"
